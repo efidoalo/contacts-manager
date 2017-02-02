@@ -1,6 +1,6 @@
 /*=============================================;
  *
- * File: contact.c
+ * File: contacts.c
  * Content: Uses remote connection to PostgreSql
  * database to store and retrieve information of
  * different personal contacts. The library
