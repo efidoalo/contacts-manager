@@ -105,7 +105,7 @@ void execute_command(char *cmd,
   if (strcmp(cmd,"l")==0) {
     PGresult *res = *resPtr_addr = PQexec(conn, "SELECT * FROM contact_data");
     if ( PQresultStatus(res)!=PGRES_TUPLES_OK ) {
-        printf("\nerror inserting data in to table.\nerr message:  %s",
+        printf("\nerror selecting data from table.\nerr message:  %s",
         PQerrorMessage(conn));
         PQclear(res);
         return;
